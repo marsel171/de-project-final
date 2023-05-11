@@ -1,0 +1,7 @@
+psycopg2
+pydantic
+pandas
+numpy
+boto3
+vertica_python
+pendulum
