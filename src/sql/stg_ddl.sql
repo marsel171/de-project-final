@@ -32,4 +32,6 @@ create table yamarselr2015yandexru__staging.currencies (
     currency_code_div numeric(5, 3) null,
     constraint currencies_pk primary key (currency_code, currency_code_with, date_update) enabled
                                                        )
-ORDER BY date_update segmented by hash(currency_code) all nodes;
+ORDER BY date_update segmented by hash(currency_code) all nodes
+PARTITION BY date_update::date
+GROUP BY calendar_hierarchy_day(date_update::date, 3, 2);
