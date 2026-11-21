@@ -8,10 +8,10 @@ log = logging.getLogger(__name__)
 
 # VERTICA DESTINATION
 conn_args_dest = {
-    "host": "51.250.75.20",
-    "port": "5433",
-    "user": "yamarselr2015yandexru",
-    "password": "EWgR2UjZH2TX6LP",
+    "host": "*******",
+    "port": "*******",
+    "user": "*******",
+    "password": "*******",
     "database": "dwh",
     "autocommit": True,
 }
